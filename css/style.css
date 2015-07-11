@@ -1,0 +1,24 @@
+
+
+.clicks {
+  color: red;
+}
+
+.cats {
+  float: left;
+}
+
+.clickablecats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clickablecats li {
+  border-bottom: 1px solid grey;
+  padding: 5px 0;
+}
+
+.clickablecats li:hover {
+  color: blue;
+}
