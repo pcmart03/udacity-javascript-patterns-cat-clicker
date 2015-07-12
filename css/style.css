@@ -1,24 +1,38 @@
 
 
-.clicks {
+#cat-clicks {
   color: red;
 }
 
-.cats {
-  float: left;
-}
 
-.clickablecats {
+#cat-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.clickablecats li {
+#cat-list li {
   border-bottom: 1px solid grey;
   padding: 5px 0;
+  margin-left: 0;
 }
 
-.clickablecats li:hover {
+#cat-list li:hover {
   color: blue;
+}
+
+#admin {
+  margin-top: 5px;
+  margin-right: 0;
+
+}
+
+.btndiv {
+  text-align: right;
+}
+
+.borderdiv {
+  margin-top: 5px;
+  padding: 0 5px;
+  border: 2px solid black;
 }

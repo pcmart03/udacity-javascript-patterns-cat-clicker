@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cat Clicker</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cat Clicker Premium Pro</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -9,29 +12,53 @@
 	</script>
 </head>
 <body>
-	<div class="container col-md-8 col-md-offset-2">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-static-top">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<h1>Cat Clicker Premium</h1>
+				<div class="navbar-header col-md-12">
+					<h1>Cat Clicker Premium Pro</h1>
+					<h4>Click a cat name</h4>
 				</div>
 			</div>
 		</nav>
-		<section class="row">
-				<div class="col-md-2">
-					<ul class="clickablecats">
+
+			<section class="container-fluid">
+				<div class="col-md-3">
+					<ul id="cat-list">
 
 					</ul>
 				</div>
-				<div class="col-md-6 catinfo">
+					<div class="col-md-8" id="cat-view">
+						<div class="row borderdiv">
+							<h2 id="cat-name"></h2>
+							<img class="img-responsive center-block" id="cat-image" src="" alt="">
+							<h4>Clicks: <span id='cat-clicks'></span></h4>
 
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<button class="btn btn-default pull-right" type="button" id="admin">Admin</button>
+						</div>
+					</div>
+
+				<div class="row" id="adminview">
+						<form>
+							<div class="form-group">
+								<label for="inputNewName">New Cat Name</label>
+								<input type="text" class="form-control" id="newName">
+								<label for="newImage">New Image</label>
+								<input type="text" class="form-control" id="newImage">
+								<label for="newclicks">New clicks</label>
+								<input type="text" class="form-control" id="newclicks">
+							</div>
+							<button type="button" class="btn btn-default" id="cancel">Cancel</button>
+							<button type="button" class="btn btn-default" id="save">Save</button>
+						</form>
+					</div>
 				</div>
-			</div>
-		</section>
-</div>
-</div>
+
+			</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/app.js"></script>
-<!-- <script src="js/clicks.js" async></script> -->
+<script src="js/app2.js"></script>
 </body>
 </html>
